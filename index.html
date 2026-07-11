@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecBiz | Tax Consultancy</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="output.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .nav-link {
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #22d3ee;
+}
+    </style>
+  </head>
+
+  <body
+    class="bg-[#0F172A] text-white overflow-x-hidden scroll-smooth relative"
+  >
+    <!-- Background Blur -->
+
+    <div class="absolute inset-0 overflow-hidden -z-10">
+      <div
+        class="absolute w-[500px] h-[500px] rounded-full bg-cyan-500/20 blur-[120px] top-0 -left-32 animate-pulse"
+      ></div>
+
+      <div
+        class="absolute w-[500px] h-[500px] rounded-full bg-blue-600/20 blur-[120px] bottom-0 right-0 animate-pulse"
+      ></div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header
+    id="navbar"
+    class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-white/10 transition-all duration-500">
+      <nav
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-5 relative"
+      >
+        <!-- Logo -->
+
+        <a href="#" class="text-3xl font-extrabold tracking-wide">
+          Tec<span class="text-cyan-400">Biz</span>
+        </a>
+
+        <!-- Menu -->
+
+        <ul class="hidden lg:flex items-center gap-10 font-medium">
+          <li>
+            <a
+              href="#"
+              class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full"
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full"
+              >Services</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full"
+              >About</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Right -->
+
+        <div class="flex items-center gap-4">
+          <button
+            class="hidden lg:block bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-semibold px-7 py-3 rounded-full transition duration-300"
+          >
+            Book Consultation
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+
+          <button
+            id="menuToggle"
+            class="lg:hidden text-3xl"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i id="menuIcon" class="ri-menu-3-line"></i>
+          </button>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="fixed top-0 right-0 h-screen w-[85%] max-w-[360px] bg-slate-900/95 backdrop-blur-xl border-l border-white/10 px-6 py-8 shadow-2xl transform translate-x-full transition-transform duration-300 ease-out z-[60] lg:hidden"
+        >
+          <div class="flex justify-end mb-10">
+            <button id="mobileMenuClose" class="text-3xl text-white" aria-label="Close menu">
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col gap-6 font-semibold text-xl">
+            <li>
+              <a
+                href="#"
+                class="block py-2 hover:text-cyan-400 transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 hover:text-cyan-400 transition duration-300"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 hover:text-cyan-400 transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 hover:text-cyan-400 transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="relative min-h-screen flex items-center p-10">
+      <div
+        class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-6 lg:px-8 pt-25"
+      >
+        <!-- LEFT -->
+
+        <div class="animate-fadUp">
+          <p class="uppercase tracking-[4px] text-cyan-400 font-semibold mb-6">
+            Trusted Tax Consultancy Across India
+          </p>
+
+          <h1
+            class="text-5xl md:text-6xl lg:text-5xl font-extrabold leading-tight"
+          >
+            Simplify Your
+
+            <span
+              class="block bg-gradient-to-r from-cyan-300 via-cyan-500 to-blue-500 bg-[length:200%_200%] animate-gradient bg-clip-text text-transparent"
+            >
+              Business Taxes
+            </span>
+
+            With Experts.
+          </h1>
+
+          <p class="mt-8 text-gray-300 text-[15px] leading-9 max-w-xl">
+            TecBiz helps startups, freelancers, MSMEs and businesses across
+            India with GST Registration, Income Tax Filing, Company
+            Registration, Accounting, ROC Compliance and Financial Advisory.
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-5">
+            <button
+              class="bg-gradient-to-r from-cyan-400 to-blue-500 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/30 duration-300 hover:bg-cyan-300 text-slate-900 font-semibold px-8 py-4 rounded-full transition"
+            >
+              Get Started
+            </button>
+
+            <button
+              class="border border-white/20 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:scale-105 duration-300 hover:bg-white/10 px-8 py-4 rounded-full transition"
+            >
+              Our Services
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="relative animate-fadeRight">
+          <!-- Floating Card -->
+
+          <!-- Dashboard -->
+
+         <div
+  class="w-full max-w-[420px] sm:max-w-none mx-auto bg-white rounded-[24px] sm:rounded-[35px] shadow-2xl p-4 sm:p-8 relative hover:-translate-y-3 hover:shadow-cyan-500/20 duration-500 animate-float"
+>
+  <!-- Header -->
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6 sm:mb-8">
+    <div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-800">Tax Overview</h2>
+      <p class="text-sm text-slate-500 mt-1">
+        Professional Tax & Business Solutions
+      </p>
+    </div>
+
+    <span
+      class="bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold"
+    >
+      Trusted Services
+    </span>
+  </div>
+
+  <!-- Services -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+
+    <!-- GST Returns -->
+    <div
+      class="flex items-center gap-3 bg-slate-50 rounded-xl p-3 border border-transparent hover:border-cyan-200 hover:bg-cyan-50 transition duration-300"
+    >
+      <div
+        class="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center"
+      >
+        <i class="ri-file-list-3-line text-cyan-600"></i>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-slate-800">GST Returns</h4>
+        <p class="text-xs text-slate-500">Monthly & Annual</p>
+      </div>
+    </div>
+
+    <!-- Income Tax -->
+    <div
+      class="flex items-center gap-3 bg-slate-50 rounded-xl p-3 border border-transparent hover:border-blue-200 hover:bg-blue-50 transition duration-300"
+    >
+      <div
+        class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center"
+      >
+        <i class="ri-money-rupee-circle-line text-blue-600"></i>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-slate-800">Income Tax</h4>
+        <p class="text-xs text-slate-500">ITR Filing</p>
+      </div>
+    </div>
+
+    <!-- Company Registration -->
+    <div
+      class="flex items-center gap-3 bg-slate-50 rounded-xl p-3 border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition duration-300"
+    >
+      <div
+        class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center"
+      >
+        <i class="ri-building-4-line text-emerald-600"></i>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-slate-800">
+          Company Registration
+        </h4>
+        <p class="text-xs text-slate-500">Private Ltd • LLP</p>
+      </div>
+    </div>
+
+    <!-- Accounting -->
+    <div
+      class="flex items-center gap-3 bg-slate-50 rounded-xl p-3 border border-transparent hover:border-orange-200 hover:bg-orange-50 transition duration-300"
+    >
+      <div
+        class="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center"
+      >
+        <i class="ri-calculator-line text-orange-600"></i>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-slate-800">Accounting</h4>
+        <p class="text-xs text-slate-500">Bookkeeping</p>
+      </div>
+    </div>
+
+    <!-- DPR Costing -->
+    <div
+      class="flex items-center gap-3 bg-slate-50 rounded-xl p-3 border border-transparent hover:border-purple-200 hover:bg-purple-50 transition duration-300"
+    >
+      <div
+        class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center"
+      >
+        <i class="ri-funds-line text-purple-600"></i>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-slate-800">DPR Preparation</h4>
+        <p class="text-xs text-slate-500">Project Reports</p>
+      </div>
+    </div>
+
+    <!-- Representation -->
+    <div
+      class="flex items-center gap-3 bg-slate-50 rounded-xl p-3 border border-transparent hover:border-pink-200 hover:bg-pink-50 transition duration-300"
+    >
+      <div
+        class="w-10 h-10 rounded-lg bg-pink-100 flex items-center justify-center"
+      >
+        <i class="ri-scales-3-line text-pink-600"></i>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-slate-800">Representation</h4>
+        <p class="text-xs text-slate-500">Before  Authorities</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
+
+    <div
+      class="bg-slate-100 rounded-xl p-4 text-center hover:bg-slate-200 transition"
+    >
+      <i class="ri-file-list-3-line text-cyan-600 text-xl"></i>
+      <h3 class="text-2xl font-bold text-slate-800 mt-2">5K+</h3>
+      <p class="text-xs text-slate-500 mt-1">Returns Filed</p>
+    </div>
+
+    <div
+      class="bg-slate-100 rounded-xl p-4 text-center hover:bg-slate-200 transition"
+    >
+      <i class="ri-team-line text-blue-600 text-xl"></i>
+      <h3 class="text-2xl font-bold text-slate-800 mt-2">1K+</h3>
+      <p class="text-xs text-slate-500 mt-1">Clients Served</p>
+    </div>
+
+    <div
+      class="bg-slate-100 rounded-xl p-4 text-center hover:bg-slate-200 transition"
+    >
+      <i class="ri-award-line text-emerald-600 text-xl"></i>
+      <h3 class="text-2xl font-bold text-slate-800 mt-2">5+</h3>
+      <p class="text-xs text-slate-500 mt-1">Years Experience</p>
+    </div>
+
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="services" class="relative py-15 bg-slate-100 overflow-hidden">
+
+    <!-- Background Decoration -->
+
+    <div class="absolute top-0 left-0 w-72 h-72 bg-cyan-200/30 rounded-full blur-[120px]"></div>
+
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-blue-200/30 rounded-full blur-[140px]"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- Heading -->
+
+        <div class="text-center max-w-3xl mx-auto">
+
+            <span class="inline-flex items-center px-5 py-2 rounded-full bg-cyan-100 text-cyan-700 font-semibold md:text-4xl">
+
+                Our Services
+
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-6">
+
+                Complete Tax & Business Consultancy
+
+            </h2>
+
+            <p class="text-slate-600 text-lg leading-8 mt-6">
+
+                We offer professional taxation, compliance, incorporation and
+                financial advisory services to individuals, startups and businesses.
+
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-20">
+
+            <!-- Cards Here -->
+ <div
+    class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 transition duration-500 hover:-translate-y-2">
+
+    <!-- Top Gradient -->
+
+    <div class="h-1 bg-gradient-to-r from-cyan-500 to-blue-300"></div>
+
+    <div class="p-8">
+
+        <!-- Icon -->
+
+        <div
+        class="w-16 h-16 rounded-2xl bg-cyan-100 flex items-center justify-center group-hover:scale-110 transition duration-300">
+
+            <i class="ri-file-list-3-line text-3xl text-cyan-600"></i>
+
+        </div>
+
+        <!-- Title -->
+
+        <h3 class="text-2xl font-bold text-slate-900 mt-8">
+
+            GST Services
+
+        </h3>
+
+        <!-- Description -->
+
+        <p class="text-slate-600 leading-7 mt-5">
+
+            Registration, Return Filing and Refund Assistance with complete GST compliance support.
+
+        </p>
+
+        <!-- Divider -->
+
+        <div class="w-full h-px bg-slate-200 my-8"></div>
+
+        <!-- Features -->
+
+        <ul class="space-y-3">
+
+            <li class="flex items-center gap-3">
+
+                <i class="ri-checkbox-circle-fill text-cyan-600"></i>
+
+                <p class="text-black">GST Registration</p>
+
+            </li>
+
+            <li class="flex items-center gap-3">
+
+                <i class="ri-checkbox-circle-fill text-cyan-600"></i>
+
+                <p class="text-black">GST Return Filing</p>
+
+            </li>
+
+            <li class="flex items-center gap-3">
+
+                <i class="ri-checkbox-circle-fill text-cyan-600"></i>
+
+                <p class="text-black">Refund Assistance</p>
+
+            </li>
+
+        </ul>
+
+        <!-- Button -->
+
+        <button
+        class="mt-8 flex items-center gap-2 font-semibold text-cyan-600 group-hover:gap-4 transition-all">
+
+            <a href="services/GstService.html">Explore Services</a>
+
+            <i class="ri-arrow-right-line"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+  <div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 transition duration-500 hover:-translate-y-2">
+
+    <div class="h-1 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
+
+    <div class="p-8">
+
+        <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center group-hover:scale-110 transition duration-300">
+            <i class="ri-money-rupee-circle-line text-3xl text-blue-600"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-slate-900 mt-8">
+            Income Tax
+        </h3>
+
+        <p class="text-slate-600 leading-7 mt-5">
+            Expert income tax planning and return filing for individuals, professionals and businesses.
+        </p>
+
+        <div class="w-full h-px bg-slate-200 my-8"></div>
+
+        <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-blue-600"></i>ITR Filing</li>
+            <li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-blue-600"></i>Tax Planning</li>
+            <li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-blue-600"></i>Notice Assistance</li>
+        </ul>
+
+        <button class="mt-8 flex items-center gap-2 font-semibold text-blue-600 group-hover:gap-4 transition-all">
+            Explore Services
+            <i class="ri-arrow-right-line"></i>
+        </button>
+
+    </div>
+
+</div>
+<div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-emerald-500/20 transition duration-500 hover:-translate-y-2">
+
+<div class="h-1 bg-gradient-to-r from-emerald-500 to-green-600"></div>
+
+<div class="p-8">
+
+<div class="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center">
+<i class="ri-file-shield-line text-3xl text-emerald-600"></i>
+</div>
+
+<h3 class="text-2xl font-bold mt-8 text-slate-900 ">TDS Compliance</h3>
+
+<p class="text-slate-600 mt-5 leading-7">
+Complete TDS compliance solutions ensuring timely filing and accurate reporting.
+</p>
+
+<div class="w-full h-px bg-slate-200 my-8"></div>
+
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-emerald-600"></i>TDS Returns</li>
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-emerald-600"></i>Compliance</li>
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-emerald-600"></i>Correction Filing</li>
+</ul>
+
+<button class="mt-8 flex items-center gap-2 font-semibold text-emerald-600 group-hover:gap-4 transition-all">
+Explore Services
+<i class="ri-arrow-right-line"></i>
+</button>
+
+</div>
+
+</div>
+<div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-purple-500/20 transition duration-500 hover:-translate-y-2">
+
+<div class="h-1 bg-gradient-to-r from-purple-500 to-violet-600"></div>
+
+<div class="p-8">
+
+<div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center">
+<i class="ri-building-4-line text-3xl text-purple-600"></i>
+</div>
+
+<h3 class="text-2xl font-bold mt-8 text-slate-900">
+Company Incorporation
+</h3>
+
+<p class="text-slate-600 mt-5 leading-7">
+Start your business with complete registration and secretarial compliance support.
+</p>
+
+<div class="w-full h-px bg-slate-200 my-8"></div>
+
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-purple-600"></i>Private Limited</li>
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-purple-600"></i>LLP Registration</li>
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-purple-600"></i>Secretarial Matters</li>
+</ul>
+
+<button class="mt-8 flex items-center gap-2 font-semibold text-purple-600 group-hover:gap-4 transition-all">
+Explore Services
+<i class="ri-arrow-right-line"></i>
+</button>
+
+</div>
+
+</div>
+<div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-red-500/20 transition duration-500 hover:-translate-y-2">
+
+<div class="h-1 bg-gradient-to-r from-red-500 to-rose-600"></div>
+
+<div class="p-8">
+
+<div class="w-16 h-16 rounded-2xl bg-red-100 flex items-center justify-center">
+<i class="ri-scales-3-line text-3xl text-red-600"></i>
+</div>
+
+<h3 class="text-2xl font-bold mt-8 text-slate-900">
+Legal Representation
+</h3>
+
+<p class="text-slate-600 mt-5 leading-7 mb-15.5">
+Professional representation before tax authorities and tribunals.
+</p>
+
+<div class="w-full h-px bg-slate-200 my-8"></div>
+
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-red-600"></i> Representation before NCLT</li>
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-red-600"></i>  Representation before GSTAT</li>
+<li class="flex items-center gap-3 text-black"><i class="ri-checkbox-circle-fill text-red-600"></i>  Representation before ITAT</li>
+</ul>
+
+<button class="mt-8 flex items-center gap-2 font-semibold text-red-600 group-hover:gap-4 transition-all">
+Explore Services
+<i class="ri-arrow-right-line"></i>
+</button>
+
+</div>
+
+</div>
+<div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-orange-500/20 transition duration-500 hover:-translate-y-2">
+
+    <div class="h-1 bg-gradient-to-r from-orange-500 to-amber-500"></div>
+
+    <div class="p-8">
+
+        <div class="w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center group-hover:scale-110 transition duration-300">
+            <i class="ri-funds-line text-3xl text-orange-600"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-slate-900 mt-8">
+            DPR & Fund Syndication
+        </h3>
+
+        <p class="text-slate-600 leading-7 mt-5">
+            Preparation of detailed project reports and assistance in arranging funds for new and expanding businesses.
+        </p>
+
+        <div class="w-full h-px bg-slate-200 my-8"></div>
+
+        <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-black">
+                <i class="ri-checkbox-circle-fill text-orange-600"></i>
+                DPR Preparation
+            </li>
+
+            <li class="flex items-center gap-3 text-black">
+                <i class="ri-checkbox-circle-fill text-orange-600"></i>
+                Fund Syndication
+            </li>
+
+            <li class="flex items-center gap-3 text-black">
+                <i class="ri-checkbox-circle-fill text-orange-600"></i>
+                Financial Planning
+            </li>
+        </ul>
+
+        <button class="mt-8 flex items-center gap-2 font-semibold text-orange-600 group-hover:gap-4 transition-all">
+            Explore Service
+            <i class="ri-arrow-right-line"></i>
+        </button>
+
+    </div>
+
+</div>
+<div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-teal-500/20 transition duration-500 hover:-translate-y-2">
+
+    <div class="h-1 bg-gradient-to-r from-teal-500 to-cyan-500"></div>
+
+    <div class="p-8">
+
+        <div class="w-16 h-16 rounded-2xl bg-teal-100 flex items-center justify-center group-hover:scale-110 transition duration-300">
+            <i class="ri-bar-chart-box-line text-3xl text-teal-600"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-slate-900 mt-8">
+            Cost Audit & Advisory
+        </h3>
+
+        <p class="text-slate-600 leading-7 mt-5">
+            Improve profitability through cost audit, bookkeeping and strategic managerial decision support.
+        </p>
+
+        <div class="w-full h-px bg-slate-200 my-8"></div>
+
+        <ul class="space-y-3 text-black">
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-teal-600"></i>
+                Cost Audit
+            </li>
+
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-teal-600"></i>
+                Cost Book Keeping
+            </li>
+
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-teal-600"></i>
+                Managerial Decisions
+            </li>
+        </ul>
+
+        <button class="mt-8 flex items-center gap-2 font-semibold text-teal-600 group-hover:gap-4 transition-all">
+            Explore Service
+            <i class="ri-arrow-right-line"></i>
+        </button>
+
+    </div>
+
+</div>
+<div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-pink-500/20 transition duration-500 hover:-translate-y-2">
+
+    <div class="h-1 bg-gradient-to-r from-pink-500 to-rose-500"></div>
+
+    <div class="p-8">
+
+        <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center group-hover:scale-110 transition duration-300">
+            <i class="ri-verified-badge-line text-3xl text-pink-600"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-slate-900 mt-8">
+            Trademark Registration
+        </h3>
+
+        <p class="text-slate-600 leading-7 mt-5">
+            Protect your brand identity with complete trademark registration, renewal and legal guidance.
+        </p>
+
+        <div class="w-full h-px bg-slate-200 my-8"></div>
+
+        <ul class="space-y-3 text-black">
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-pink-600"></i>
+                Trademark Filing
+            </li>
+
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-pink-600"></i>
+                Brand Protection
+            </li>
+
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-pink-600"></i>
+                Renewal Services
+            </li>
+        </ul>
+
+        <button class="mt-8 flex items-center gap-2 font-semibold text-pink-600 group-hover:gap-4 transition-all">
+            Explore Service
+            <i class="ri-arrow-right-line"></i>
+        </button>
+
+    </div>
+
+</div>
+<div class="group relative bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-sky-500/20 transition duration-500 hover:-translate-y-2">
+
+    <div class="h-1 bg-gradient-to-r from-sky-500 to-orange-600"></div>
+
+    <div class="p-8">
+
+        <div class="w-16 h-16 rounded-2xl bg-sky-100 flex items-center justify-center group-hover:scale-110 transition duration-300">
+            <i class="ri-shield-check-line text-3xl text-sky-600"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-slate-900 mt-8">
+            Audit & Assurance
+        </h3>
+
+        <p class="text-slate-600 leading-7 mt-5">
+            Independent audit and assurance services that enhance financial transparency.
+        </p>
+
+        <div class="w-full h-px bg-slate-200 my-8"></div>
+
+        <ul class="space-y-3 text-black">
+
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-sky-600"></i>
+                Statutory Audit
+            </li>
+
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-sky-600"></i>
+                Internal Audit
+            </li>
+
+            <li class="flex items-center gap-3">
+                <i class="ri-checkbox-circle-fill text-sky-600"></i>
+                Assurance Services
+            </li>
+
+        </ul>
+
+        <button class="mt-8 flex items-center gap-2 font-semibold  text-slate-700  group-hover:gap-4 transition-all">
+            Explore Service
+            <i class="ri-arrow-right-line"></i>
+        </button>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
+  </body>
+</html>

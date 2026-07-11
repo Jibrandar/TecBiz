@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .nav-link {
+            color: white;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #22d3ee;
+        }
+    </style>
+
+</head>
+
+<body class="overflow-x-hidden scroll-smooth relative">
+    <div class="absolute inset-0 overflow-hidden -z-10">
+        <div class="absolute w-[500px] h-[500px] rounded-full bg-cyan-500/20 blur-[120px] top-0 -left-32 animate-pulse">
+        </div>
+
+        <div
+            class="absolute w-[500px] h-[500px] rounded-full bg-blue-600/20 blur-[120px] bottom-0 right-0 animate-pulse">
+        </div>
+    </div>
+    <header id="navbar"
+        class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-white/10 transition-all duration-500">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-5 relative">
+            <!-- Logo -->
+
+            <a href="#" class="text-3xl font-extrabold tracking-wide">
+                <span class="text-white">Tec</span><span class="text-cyan-400">Biz</span>
+            </a>
+
+            <!-- Menu -->
+
+            <ul class="hidden lg:flex items-center gap-10 font-medium">
+                <li>
+                    <a href="#"
+                        class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full">Home</a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full">Services</a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full">About</a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class=" nav-link relative hover:text-cyan-400 transition duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all hover:after:w-full">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right -->
+
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden lg:block bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-semibold px-7 py-3 rounded-full transition duration-300">
+                    Book Consultation
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+
+                <button id="menuToggle" class="lg:hidden text-3xl" aria-label="Toggle menu" aria-expanded="false">
+                    <i id="menuIcon" class="ri-menu-3-line"></i>
+                </button>
+            </div>
+
+            <div id="mobileMenu"
+                class="fixed top-0 right-0 h-screen w-[85%] max-w-[360px] bg-slate-900/95 backdrop-blur-xl border-l border-white/10 px-6 py-8 shadow-2xl transform translate-x-full transition-transform duration-300 ease-out z-[60] lg:hidden">
+                <div class="flex justify-end mb-10">
+                    <button id="mobileMenuClose" class="text-3xl text-white" aria-label="Close menu">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+                <ul class="flex flex-col gap-6 font-semibold text-xl">
+                    <li>
+                        <a href="#" class="block py-2 hover:text-cyan-400 transition duration-300">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 hover:text-cyan-400 transition duration-300">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 hover:text-cyan-400 transition duration-300">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 hover:text-cyan-400 transition duration-300">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section
+        class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 pt-2">
+
+        <!-- Glow 1 -->
+        <div
+            class="absolute w-[450px] h-[450px] rounded-full bg-cyan-500/20 blur-[130px] -top-24 -left-24 animate-pulse">
+        </div>
+
+        <!-- Glow 2 -->
+        <div
+            class="absolute w-[450px] h-[450px] rounded-full bg-blue-600/20 blur-[140px] bottom-0 right-0 animate-pulse">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 w-full">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center justify-center">
+
+                <!-- Left Content -->
+
+                <div class="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+
+                    <!-- Your existing hero content -->
+                    <div class="max-w-3xl w-full md:relative md: bottom-6 ">
+                        <span
+                            class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 font-medium">
+                            GST Services
+                        </span>
+                        <h1 class="text-5xl md:text-5xl font-extrabold text-white mt-8 leading-tight">
+                            Complete GST Solutions
+                            <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                                For Your Business
+                            </span>
+                        </h1>
+                        <p class="text-slate-300 text-base md:text-lg leading-8 mt-8 max-w-2xl mx-auto lg:mx-0">
+                            From GST Registration to Return Filing and Notice Representation, we provide end-to-end GST
+                            services for businesses across India.
+                        </p>
+                        <a href="#gst-options"
+                            class="inline-flex items-center gap-3 mt-10 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold hover:scale-105 transition">
+                            Choose a Service <i class="ri-arrow-down-line"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right Card -->
+
+                <div class="flex justify-center lg:justify-end">
+
+                    <!-- GST Dashboard goes here -->
+                    <div
+                        class="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[32px] p-8 w-[430px] shadow-2xl shadow-cyan-500/10 ">
+
+                        <div class="flex justify-between items-center">
+
+                            <h3 class="text-2xl font-bold text-white">
+                                GST Services
+                            </h3>
+
+                            <span class="px-4 py-2 rounded-full bg-emerald-500/20 text-emerald-300 text-sm">
+
+                                Available
+
+                            </span>
+
+                        </div>
+
+                        <div class="space-y-4 mt-8">
+
+                            <div class="flex items-center gap-4 bg-white/5 rounded-2xl p-4">
+
+                                <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center">
+                                    <i class="ri-file-add-line text-cyan-400 text-2xl"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-white font-semibold">
+                                        GST Registration
+                                    </h4>
+
+                                    <p class="text-slate-300 text-sm">
+                                        New Business Registration
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flex items-center gap-4 bg-white/5 rounded-2xl p-4">
+
+                                <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center">
+                                    <i class="ri-file-list-3-line text-blue-400 text-2xl"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-white font-semibold">
+                                        GST Returns
+                                    </h4>
+
+                                    <p class="text-slate-300 text-sm">
+                                        Monthly & Annual Filing
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="flex items-center gap-4 bg-white/5 rounded-2xl p-4">
+
+                                <div class="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center">
+                                    <i class="ri-scales-3-line text-red-400 text-2xl"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4 class="text-white font-semibold">
+                                        GST Notice
+                                    </h4>
+
+                                    <p class="text-slate-300 text-sm">
+                                        Notice Reply & Representation
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 mt-8">
+
+                            <div class="bg-white/5 rounded-xl p-4 text-center">
+
+                                <i class="ri-shield-check-line text-cyan-400 text-xl"></i>
+
+                                <p class="text-white font-bold mt-2">100%</p>
+
+                                <span class="text-slate-400 text-xs">
+                                    Compliance
+                                </span>
+
+                            </div>
+
+                            <div class="bg-white/5 rounded-xl p-4 text-center">
+
+                                <i class="ri-time-line text-blue-400 text-xl"></i>
+
+                                <p class="text-white font-bold mt-2">On Time</p>
+
+                                <span class="text-slate-400 text-xs">
+                                    Filing
+                                </span>
+
+                            </div>
+
+                            <div class="bg-white/5 rounded-xl p-4 text-center">
+
+                                <i class="ri-customer-service-2-line text-emerald-400 text-xl"></i>
+
+                                <p class="text-white font-bold mt-2">Expert</p>
+
+                                <span class="text-slate-400 text-xs">
+                                    Support
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="gst-options" class="relative py-15 bg-gradient-to-b from-slate-100 to-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto">
+
+
+                <span
+                    class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 font-semibold text-sm">
+                    Choose a Service
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-6">
+                    How Can We Help You?
+                </h2>
+
+                <p class="text-slate-600 text-lg leading-8 mt-5">
+                    Select the GST service you require. The corresponding application form
+                    will appear below.
+                </p>
+
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16">
+
+                <!-- GST Registration -->
+
+                <button id="registration-btn" type="button" data-form="registration"
+                    class="service-card group text-left bg-white rounded-[28px] p-8 border-2 border-transparent shadow-lg hover:border-cyan-500 hover:shadow-cyan-500/20 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+
+                    <div class="w-16 h-16 rounded-2xl bg-cyan-100 flex items-center justify-center">
+                        <i class="ri-file-add-line text-3xl text-cyan-600"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-slate-900 mt-8">
+                        GST Registration
+                    </h3>
+
+                    <p class="text-slate-600 leading-7 mt-4">
+                        Register your business under GST quickly with expert guidance.
+                    </p>
+
+                    <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-200">
+
+                        <span class="font-semibold text-cyan-600">
+                            Open Form
+                        </span>
+
+                        <i class="ri-arrow-right-line text-2xl text-cyan-600 group-hover:translate-x-2 transition"></i>
+
+                    </div>
+
+                </button>
+
+                <!-- GST Returns -->
+
+                <button data-form="returns"
+                    class="service-card group text-left bg-white rounded-[28px] p-8 border-2 border-transparent shadow-lg hover:border-blue-500 hover:shadow-blue-500/20 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center">
+                        <i class="ri-file-list-3-line text-3xl text-blue-600"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-slate-900 mt-8">
+                        GST Returns
+                    </h3>
+
+                    <p class="text-slate-600 leading-7 mt-4">
+                        Monthly, quarterly and annual GST return filing made simple.
+                    </p>
+
+                    <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-200">
+
+                        <span class="font-semibold text-blue-600">
+                            Open Form
+                        </span>
+
+                        <i class="ri-arrow-right-line text-2xl text-blue-600 group-hover:translate-x-2 transition"></i>
+
+                    </div>
+
+                </button>
+
+                <!-- GST Notice -->
+
+                <button data-form="notice"
+                    class="service-card group text-left bg-white rounded-[28px] p-8 border-2 border-transparent shadow-lg hover:border-red-500 hover:shadow-red-500/20 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+
+                    <div class="w-16 h-16 rounded-2xl bg-red-100 flex items-center justify-center">
+                        <i class="ri-scales-3-line text-3xl text-red-600"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-slate-900 mt-8">
+                        GST Notices
+                    </h3>
+
+                    <p class="text-slate-600 leading-7 mt-4">
+                        Professional assistance for GST notices and departmental representation.
+                    </p>
+
+                    <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-200">
+
+                        <span class="font-semibold text-red-600">
+                            Open Form
+                        </span>
+
+                        <i class="ri-arrow-right-line text-2xl text-red-600 group-hover:translate-x-2 transition"></i>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="registration-form"
+        class="opacity-0 -translate-y-10 pointer-events-none max-h-0 overflow-hidden transition-all duration-700 ease-out">
+
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+
+            <!-- Form Card -->
+
+            <div class="bg-white rounded-[32px] shadow-2xl border border-slate-200 overflow-hidden relative">
+
+                <!-- Header -->
+                <button type="button" id="close-registration-form"
+                    class="absolute top-20 right-4 z-20 w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 transition flex items-center justify-center">
+
+                    <i class="ri-close-line text-white text-2xl"></i>
+
+                </button>
+                <div class="bg-gradient-to-r from-cyan-600 to-blue-600 px-8 py-8 relative">
+
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-cyan-100 border border-white/20 text-sm">
+
+                            GST Registration
+
+                        </span>
+                    </div>
+
+                    <h2 class="text-4xl font-bold text-white mt-5">
+
+                        GST Registration Application
+
+                    </h2>
+
+                    <p class="text-cyan-100 mt-4 text-lg">
+
+                        Complete the form below and our team will contact you shortly.
+
+                    </p>
+
+                </div>
+
+                <!-- Form -->
+                <form
+    class="tecbiz-form"
+    action="YOUR_APPS_SCRIPT_URL"
+    method="POST">
+
+                    <input type="hidden" name="Service" value="GST Registration">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Business Name
+                            </label>
+
+                            <input type="text" name="Business Name" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Contact Person Name
+                            </label>
+
+                            <input type="text" name="Contact Person" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Mobile Number
+                            </label>
+
+                            <input type="tel" name="Mobile" required pattern="[0-9]{10}"
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Email Address
+                            </label>
+
+                            <input type="email" name="Email" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div class="mt-6">
+
+                            <label class="block mb-2 font-medium">
+
+                                Business Type
+
+                            </label>
+
+                            <select name="Business Type" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                                <option value="">Select Business Type</option>
+
+                                <option>Proprietorship</option>
+
+                                <option>Partnership</option>
+
+                                <option>LLP</option>
+
+                                <option>Private Limited</option>
+
+                                <option>OPC</option>
+
+                                <option>Other</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="mt-6">
+
+                            <label class="block mb-2 font-medium">
+
+                                Business Address
+
+                            </label>
+
+                            <textarea rows="4" name="Business Address"
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none"></textarea>
+
+                        </div>
+
+                        <div class="md:col-span-2">
+
+<button
+type="submit"
+class="submit-btn mt-8 w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold transition">
+
+Submit Registration Request
+
+</button>
+
+</div>
+                       
+                    </div>
+                </form>
+
+
+    </section>
+
+    <!-- Returns Form (same design as registration) -->
+    <section id="returns-form"
+        class="opacity-0 -translate-y-10 pointer-events-none max-h-0 overflow-hidden transition-all duration-700 ease-out">
+
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+
+            <!-- Form Card -->
+
+            <div class="bg-white rounded-[32px] shadow-2xl border border-slate-200 overflow-hidden relative">
+
+                <!-- Header -->
+                <button type="button" id="close-returns-form"
+                    class="absolute top-20 right-4 z-20 w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 transition flex items-center justify-center">
+
+                    <i class="ri-close-line text-white text-2xl"></i>
+
+                </button>
+                <div class="bg-gradient-to-r from-cyan-600 to-blue-600 px-8 py-8 relative">
+
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-cyan-100 border border-white/20 text-sm">
+
+                            GST Returns
+
+                        </span>
+                    </div>
+
+                    <h2 class="text-4xl font-bold text-white mt-5">
+
+                        GST Returns Application
+
+                    </h2>
+
+                    <p class="text-cyan-100 mt-4 text-lg">
+
+                        Complete the form below and our team will contact you shortly.
+
+                    </p>
+
+                </div>
+
+                <!-- Form -->
+                <form id="gstForm"
+                    action="https://script.google.com/macros/s/AKfycbxoJAY_IiXaGgwnsIC2cH6w_ZyCI2KYnxOs7Ekg34i6I5SWviFrWuvNYHKheWKwtPwH/exec"
+                    method="POST" class="p-10">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="Service" value="GST Return">
+
+
+                    <!-- Add your input fields for GST Returns here -->
+
+
+                    <div class="grid md:grid-cols-2 gap-6 p-10">
+
+
+                        <!-- User will add inputs here -->
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Business Name
+                            </label>
+
+                            <input type="text" name="Business Name" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Contact Person Name
+                            </label>
+
+                            <input type="text" name="Contact Person" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Mobile Number
+                            </label>
+
+                            <input type="tel" name="Mobile" required pattern="[0-9]{10}"
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Email Address
+                            </label>
+
+                            <input type="email" name="Email" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                Aadhar Number
+                            </label>
+
+                            <input type="text" name="Aadhar Number" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 font-medium">
+
+                                Business Nature
+
+                            </label>
+
+                            <select name="Business Type" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                                <option value="">Select Business Nature</option>
+
+                                <option>Goods</option>
+
+                                <option>Services</option>
+
+                                <option>Both</option>
+
+
+                            </select>
+
+                        </div>
+
+                        <div>
+
+                            <label class="block mb-2 font-medium">
+                                GSTIN Number
+                            </label>
+
+                            <input type="text" name="GSTIN Number" required
+                                class="w-full rounded-2xl bg-slate-50 border border-slate-200 px-5 py-4 focus:ring-4 focus:ring-cyan-100 focus:border-cyan-500 outline-none">
+
+                        </div>
+                        <div class="md:col-span-2">
+
+
+
+                            <div class="mt-6">
+                                <button id="submitBtn" type="submit"
+                                    class="mt-8 w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-[1.02] transition">
+
+                                    Submit Return Request
+
+                                </button>
+
+                            </div>
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Notice Form (same design as registration) -->
+    <section id="notice-form"
+        class="opacity-0 -translate-y-10 pointer-events-none max-h-0 overflow-hidden transition-all duration-700 ease-out">
+
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+
+            <!-- Form Card -->
+
+            <div class="bg-white rounded-[32px] shadow-2xl border border-slate-200 overflow-hidden relative">
+
+                <!-- Header -->
+                <button type="button" id="close-notice-form"
+                    class="absolute top-20 right-4 z-20 w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 transition flex items-center justify-center">
+
+                    <i class="ri-close-line text-white text-2xl"></i>
+
+                </button>
+                <div class="bg-gradient-to-r from-cyan-600 to-blue-600 px-8 py-8 relative">
+
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 text-cyan-100 border border-white/20 text-sm">
+
+                            GST Notices
+
+                        </span>
+                    </div>
+
+                    <h2 class="text-4xl font-bold text-white mt-5">
+
+                        GST Notices Application
+
+                    </h2>
+
+                    <p class="text-cyan-100 mt-4 text-lg">
+
+                        Complete the form below and our team will contact you shortly.
+
+                    </p>
+
+                </div>
+
+                <!-- Form -->
+                <form action="#" method="POST" class="p-10">
+
+                    <!-- Add your input fields for GST Notices here -->
+
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <!-- User will add inputs here -->
+
+                    </div>
+
+                    <button type="submit"
+                        class="mt-8 w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-[1.02] transition">
+
+                        Submit Notice Request
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script src="../script.js"></script>
+    <script src="../submit.js"></script>
+
+
+
+</body>
+
+</html>
