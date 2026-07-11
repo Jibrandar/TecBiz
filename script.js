@@ -212,3 +212,25 @@ closeButtons.forEach(btn => {
     });
 });
 
+// Prevent duplicate submissions across all forms on the page.
+document.querySelectorAll("form").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+        if (form.dataset.submitted === "true") {
+            event.preventDefault();
+            return;
+        }
+
+        form.dataset.submitted = "true";
+
+        form.querySelectorAll('button[type="submit"], input[type="submit"]').forEach((button) => {
+            button.disabled = true;
+            button.setAttribute("aria-disabled", "true");
+            button.classList.add("opacity-70", "cursor-not-allowed");
+
+            if (button.tagName === "BUTTON" && button.textContent.trim() !== "") {
+                button.textContent = "Submitted";
+            }
+        });
+    });
+});
+
