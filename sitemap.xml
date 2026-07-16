@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/download/92e9ab2b5-37a2e5a78/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-       <loc>https://tecbiz.in/</loc>
-       <lastmod>2026-07-16T06:51:22+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
+    <loc>https://tecbiz.in/</loc>
+    <lastmod>2026-07-16T06:51:22+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
+
   <url>
-       <loc>https://tecbiz.in/services/GstService.html</loc>
-       <lastmod>2026-07-16T06:51:23+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://tecbiz.in/services/GstService.html</loc>
+    <lastmod>2026-07-16T06:51:23+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
-  <url>
-       <loc>https://tecbiz.in/index.html</loc>
-       <lastmod>2026-07-16T06:51:23+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
-  </url>
+
 </urlset>
