@@ -3,16 +3,74 @@
 
   <url>
     <loc>https://tecbiz.in/</loc>
-    <lastmod>2026-07-16T06:51:22+00:00</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://tecbiz.in/services/GstService.html</loc>
-    <lastmod>2026-07-16T06:51:23+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/ITRservice.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/TdsCompliance.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/CompanyIncoporation.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/TrademarkRegistration.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/DPRFund.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/CostAudit.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/LegalRepresentation.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tecbiz.in/services/AuditAssurance.html</loc>
+    <lastmod>2026-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+ 
 
 </urlset>
